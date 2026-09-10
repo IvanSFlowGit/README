@@ -1,4 +1,4 @@
-# Ivan Skachek [Linktree](https://linktr.ee/Ivansflow)) 
+# Ivan Skachek [Linktree](https://linktr.ee/Ivansflow)
 
 I help fintech, ecommerce and SaaS teams deploy **reliable, auditable AI** for payments, compliance, and operations.  
 I build LangGraph agents, Python services, and automation pipelines where **deterministic rules decide anything that touches money** and the model only drafts language.
