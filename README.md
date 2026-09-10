@@ -10,6 +10,19 @@ Contact: [nonfungibleivan@gmail.com](mailto:nonfungibleivan@gmail.com) | [Linked
 
 ---
 
+## Who I help
+
+I work with:
+
+- SaaS and ecommerce teams dealing with failed payments, subscription churn, or revenue leakage.
+- Fintech and payments companies that need auditable AI for dunning, collections, or risk workflows.
+- Compliance and AML teams that want AI-assisted triage without handing decisions to a model.
+- Agencies and consultancies that need a technical partner to deliver AI features for their clients.
+
+My preferred pattern is simple: deterministic rules handle money, risk, and compliance; AI handles language, retrieval, and analyst assistance.
+
+---
+
 ## Running projects
 
 ### [PayPilot – AI dunning agent for subscription billing](https://paypilot.fly.dev)
@@ -48,12 +61,13 @@ Live demo on the same deterministic‑core pattern:
 **Demo:** [aml-triage-demo.vercel.app](https://aml-triage-demo.vercel.app)  
 **Code:** [`github.com/IvanSFlowGit/aml-triage-demo`](https://github.com/IvanSFlowGit/aml-triage-demo)
 
-### Revend – revenue recovery for ecommerce (soon live in Shopify App Store)*
+### Revend – revenue recovery for ecommerce
 
-Recovers abandoned carts and post‑purchase revenue leakage:
+A revenue-recovery project for abandoned carts and post-purchase leakage:
 
-- Different message per shopper matched to their cart and hesitation, rather than one blanket discount.  
-- Same deterministic‑core pattern as PayPilot: rules decide offers, model drafts copy.
+- Different message per shopper matched to their cart and hesitation, rather than one blanket discount.
+- Same deterministic-core pattern as PayPilot: rules decide offers, model drafts copy.
+- Shopify App Store publication is planned; this project is not currently presented as a live public listing.
 
 ---
 
@@ -89,9 +103,9 @@ This is what I would reach for, not everything I have touched.
 
 ## Contact
 
-- Email: [nonfungibleivan@gmail.com](mailto:nonfungibleivan@gmail.com)  
-- LinkedIn: [linkedin.com/in/ivansflow](https://www.linkedin.com/in/ivansflow/)  
-- Website: [streamflow.solutions](https://streamflow.solutions)  
-- Book a 30‑min call: [calendly.com/nonfungibleivan/30min](https://calendly.com/nonfungibleivan/30min)
+- Email: [nonfungibleivan@gmail.com](mailto:nonfungibleivan@gmail.com)
+- LinkedIn: [linkedin.com/in/ivansflow](https://www.linkedin.com/in/ivansflow/)
+- Website: [streamflow.solutions](https://streamflow.solutions)
+- Book a 30-minute call: [calendly.com/nonfungibleivan/30min](https://calendly.com/nonfungibleivan/30min)
 
-If you’re working on subscription billing, payments, compliance, or ops automation and want to add reliable AI features, I’m open to selected collaborations and contract work.
+I’m open to collaborations involving payments, compliance, ecommerce revenue recovery, and reliable AI automation.
