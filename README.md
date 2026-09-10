@@ -48,7 +48,7 @@ Live demo on the same deterministic‑core pattern:
 **Demo:** [aml-triage-demo.vercel.app](https://aml-triage-demo.vercel.app)  
 **Code:** [`github.com/IvanSFlowGit/aml-triage-demo`](https://github.com/IvanSFlowGit/aml-triage-demo)
 
-### [Revend – revenue recovery for ecommerce](https://revend.streamflow.solutions) *(if/when live)*
+### [Revend – revenue recovery for ecommerce]*(soon live in Shopify App Store)*
 
 Recovers abandoned carts and post‑purchase revenue leakage:
 
