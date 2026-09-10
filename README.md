@@ -1,32 +1,70 @@
-# README
-Profile README - updated 4 September 2026
-
 # Ivan Skachek
 
-I build systems that check whether a model's score still means what it claims.
-Evaluation sets quietly turn into training data, and the number keeps climbing long after it has stopped measuring anything.
+I help fintech, ecommerce and SaaS teams deploy **reliable, auditable AI** for payments, compliance, and operations.  
+I build LangGraph agents, Python services, and automation pipelines where **deterministic rules decide anything that touches money** and the model only drafts language.
 
-## Running
+Flagship project: **[PayPilot](https://paypilot.fly.dev)** – an AI dunning agent that recovers failed subscription payments with full auditability and no PII stored.
 
-**[PayPilot](https://paypilot.fly.dev)** an AI dunning agent that recovers failed
-subscription payments. A LangGraph agent behind a FastAPI endpoint, deployed on
-Fly.io. The demo runs in the browser with no setup and no API key, and the whole
-test suite runs with no API key and no network.
+More work: **[streamflow.solutions](https://streamflow.solutions)**  
+Contact: [nonfungibleivan@gmail.com](mailto:nonfungibleivan@gmail.com) | [LinkedIn](https://www.linkedin.com/in/ivansflow/) | [Calendly](https://calendly.com/nonfungibleivan/30min)
 
-## Contributed
+---
 
-**[LangGraph error handler matrix](https://github.com/IvanSFlowGit/langgraph-error-handler-matrix)**
-a reproducible test matrix isolating a defect in the framework, with a negative control for every case, so a pass cannot be explained by the test itself.
-Reproduced independently by another engineer on
-[the issue](https://github.com/langchain-ai/langgraph/issues/8277).
+## Running projects
 
-## Every number in the work below has a control behind it
+### [PayPilot – AI dunning agent for subscription billing](https://paypilot.fly.dev)
 
-Where a result could be explained by the test rather than by the code, there is
-a negative control that says so, published next to the result rather than kept.
+A 7‑node LangGraph agent with RAG over a dunning playbook, served through a FastAPI API and deployed on Fly.io with Docker, CI, and health checks.
 
-Superseded numbers are retired rather than edited, so a figure quoted in an old
-commit stays readable as the number that was true then.
+- Retry strategy and all money‑affecting decisions live in a **deterministic rules table**.  
+- The model only drafts email/SMS language; rules decide actions, so behavior is explainable from a row rather than a transcript.  
+- The full test suite runs offline with the model and retriever mocked: no API key, no network, including adversarial prompt‑injection and PII‑masking cases in CI.  
+- Untrusted input is fenced and outputs fail closed.  
+- Closed‑loop recovery proven on Stripe test mode: failed invoice → recovery email → paid, matched by invoice ID, with idempotency, send caps, and a metrics endpoint.  
+- GDPR‑ready by architecture and verified in CI: no name or email column stored, PII masked before the model, append‑only audit log, erasure proven by test, EU AI Act Article 50 disclosure built in.
+
+**Live demo:** [paypilot.fly.dev](https://paypilot.fly.dev)  
+**Code:** [`github.com/IvanSFlowGit/paypilot`](https://github.com/IvanSFlowGit/paypilot)
+
+---
+
+## Selected contributions
+
+### [LangGraph error handler matrix](https://github.com/IvanSFlowGit/langgraph-error-handler-matrix)
+
+A reproducible test matrix isolating a defect in LangGraph’s error handling, with a negative control for every case so a pass cannot be explained by the test itself.
+
+- 24 handled‑path cases plus 6 over‑suppression controls.  
+- Independently reproduced by another engineer on [the issue](https://github.com/langchain-ai/langgraph/issues/8277).
+
+### [AML alert‑triage demo](https://aml-triage-demo.vercel.app)
+
+Live demo on the same deterministic‑core pattern:
+
+- A rules engine scores each alert so the score is auditable and reproducible.  
+- The model writes the analyst narrative but **never the decision**.  
+- Synthetic data only.
+
+**Demo:** [aml-triage-demo.vercel.app](https://aml-triage-demo.vercel.app)  
+**Code:** [`github.com/IvanSFlowGit/aml-triage-demo`](https://github.com/IvanSFlowGit/aml-triage-demo)
+
+### [Revend – revenue recovery for ecommerce](https://revend.streamflow.solutions) *(if/when live)*
+
+Recovers abandoned carts and post‑purchase revenue leakage:
+
+- Different message per shopper matched to their cart and hesitation, rather than one blanket discount.  
+- Same deterministic‑core pattern as PayPilot: rules decide offers, model drafts copy.
+
+---
+
+## How I work
+
+- **Deterministic core, AI on top:** rules and scoring handle risk, money, and compliance; the model explains and drafts.  
+- **Evaluation with controls:** where a result could be explained by the test rather than the code, there is a negative control published next to the result.  
+- **Superseded numbers are retired, not edited:** a figure quoted in an old commit stays readable as the number that was true then.  
+- **Client‑facing delivery:** discovery and scoping calls, findings walkthroughs, end‑to‑end ownership from requirements to production.
+
+---
 
 ## Stack
 
@@ -38,10 +76,22 @@ commit stays readable as the number that was true then.
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Fly.io](https://img.shields.io/badge/Fly.io-24175B?style=flat&logo=flydotio&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-FF6D5A?style=flat&logo=n8n&logoColor=white)
+![Make](https://img.shields.io/badge/Make-000000?style=flat&logo=make&logoColor=white)
 
-What I would reach for, not everything I have touched.
+This is what I would reach for, not everything I have touched.
+
+---
 
 ## Contact
 
-[nonfungibleivan@gmail.com](mailto:nonfungibleivan@gmail.com) and
-[LinkedIn](https://www.linkedin.com/in/ivansflow/)
+- Email: [nonfungibleivan@gmail.com](mailto:nonfungibleivan@gmail.com)  
+- LinkedIn: [linkedin.com/in/ivansflow](https://www.linkedin.com/in/ivansflow/)  
+- Website: [streamflow.solutions](https://streamflow.solutions)  
+- Book a 30‑min call: [calendly.com/nonfungibleivan/30min](https://calendly.com/nonfungibleivan/30min)
+
+If you’re working on subscription billing, payments, compliance, or ops automation and want to add reliable AI features, I’m open to selected collaborations and contract work.
